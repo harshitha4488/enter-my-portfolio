@@ -1,23 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harshitha | Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        body { font-family: sans-serif; text-align: center; padding: 20px; background: #f4f4f4; }
-        .card { background: white; padding: 20px; border-radius: 15px; shadow: 0 4px 8px rgba(0,0,0,0.1); }
-        h1 { color: #333; }
-        .skills { color: #666; font-weight: bold; }
+        /* This makes the background colorful and attractive */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #333;
+        }
+
+        /* This is the white box (card) that holds your info */
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            text-align: center;
+            max-width: 350px;
+            width: 90%;
+        }
+
+        h1 { margin-bottom: 5px; color: #764ba2; }
+        p { font-size: 1.1em; color: #555; }
+
+        /* Style for the 'AITS' badge */
+        .badge {
+            background: #e0e7ff;
+            color: #4338ca;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        /* Interactive Button */
+        .btn {
+            display: block;
+            margin-top: 25px;
+            padding: 12px;
+            background: #764ba2;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover { background: #5a368a; transform: scale(1.05); }
     </style>
 </head>
 <body>
+
     <div class="card">
         <h1>Harshitha</h1>
-        <p>3rd Year BTech Student @ AITS</p>
-        <hr>
-        <p><strong>Technical Skills:</strong> Java, Python, C</p>
-        <p><strong>Goal:</strong> Web & App Development</p>
-        <p><em>Currently building my first Android project!</em></p>
+        <div class="badge">AITS Student</div>
+        <p><strong>3rd Year BTech Student</strong></p>
+        <p>Aspiring App & Web Developer</p>
+        <hr style="border: 0.5px solid #eee; margin: 20px 0;">
+        <p>Skills: Java | Python | C</p>
+        
+        <a href="https://github.com/harshitha4488" class="btn">View My GitHub</a>
     </div>
+
 </body>
 </html>
